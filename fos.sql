@@ -2,8 +2,8 @@
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 30, 2021 at 08:16 AM
+-- Host: 127.0.0.1:3306
+-- Generation Time: Apr 22, 2021 at 02:01 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -94,7 +94,7 @@ CREATE TABLE `manager` (
 --
 
 INSERT INTO `manager` (`fullname`, `username`, `email`, `password`, `address`, `phone`) VALUES
-('Abc def', '18BCE131', '18BCE000@gmail.com', 'neel', 'asd', '9898989898');
+('Abc def', 'admin', '18BCE000@gmail.com', 'admin', 'asd', '9898989898');
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,8 @@ INSERT INTO `orders` (`order_id`, `F_ID`, `foodname`, `price`, `quantity`, `orde
 (17, 3, 'Taco Pizza', 100, 1, '2021-03-29', 'asd'),
 (18, 3, 'Taco Pizza', 100, 1, '2021-03-29', 'asd'),
 (19, 2, 'Menduvada', 100, 1, '2021-03-30', 'asd'),
-(20, 2, 'Menduvada', 100, 1, '2021-03-30', 'asd');
+(20, 2, 'Menduvada', 100, 1, '2021-03-30', 'asd'),
+(21, 3, 'Rajavadi Thali', 180, 1, '2021-04-02', 'asd');
 
 --
 -- Indexes for dumped tables
@@ -182,7 +183,7 @@ ALTER TABLE `food`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `order_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
